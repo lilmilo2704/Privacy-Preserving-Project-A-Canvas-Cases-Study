@@ -1,0 +1,40 @@
+{
+  "design_version": "1.0",
+  "seeds": [2026, 2027, 2028, 2029, 2030],
+  "n_students": 1000,
+  "programme_counts": {"P01": 320, "P02": 260, "P03": 180, "P04": 120, "P05": 80, "P06": 40},
+  "programme_band_probabilities": {
+    "P01": [0.18, 0.32, 0.25, 0.17, 0.08],
+    "P02": [0.25, 0.30, 0.24, 0.15, 0.06],
+    "P03": [0.12, 0.28, 0.30, 0.20, 0.10],
+    "P04": [0.30, 0.30, 0.22, 0.12, 0.06],
+    "P05": [0.15, 0.30, 0.28, 0.18, 0.09],
+    "P06": [0.35, 0.30, 0.20, 0.10, 0.05]
+  },
+  "band_order": ["Below50", "Pass", "Credit", "Distinction", "HighDistinction"],
+  "mark_intervals_inclusive": [[0,49], [50,64], [65,74], [75,84], [85,100]],
+  "age_domain": [18,65],
+  "age_young_probability": 0.85,
+  "age_young_mean_sd": [22,3],
+  "age_mature_mean_sd": [38,9],
+  "postcode_regions": [91,92,93,94],
+  "postcode_subregions_per_region": 2,
+  "postcode_leaves_per_subregion": 5,
+  "programme_preferred_region_probability": 0.55,
+  "postcode_subregion_study_context_probability": 0.85,
+  "study_context_mixture_weight": 0.55,
+  "study_context_band_probabilities": [
+    [0.80,0.15,0.04,0.01,0.00],
+    [0.02,0.18,0.30,0.30,0.20]
+  ],
+  "age_widths": [1,5,10,20,48],
+  "postcode_prefix_lengths": [4,3,2,0],
+  "k_values": [5,10,20],
+  "l_values": [2,3],
+  "max_suppression": 0.10,
+  "high_confidence_threshold": 0.80,
+  "selection_rule": "Minimise equal-weight age/postcode normalised domain-span loss over all source rows, before suppression; subject to k/l validity, non-empty release, and <=10% overall suppression. Tie-break by lower suppression, then age level, then postcode level.",
+  "programme_policy": "exact in every release",
+  "postcode_semantics": "Fictional four-digit tokens. Prefixes define a synthetic hierarchy only; no Australian locality, delivery area, or geographic relationship is claimed.",
+  "generation_interpretation": "Researcher-defined simulation assumptions, not observed UTS or Canvas student characteristics. A synthetic unobserved study-context variable creates controlled associations; postcode does not cause academic performance. No realised outcomes used for parameter tuning."
+}

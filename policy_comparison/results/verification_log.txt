@@ -1,0 +1,27 @@
+test_baseline_unique_attack_in_worked_example (test_experiment.ExperimentChecks.test_baseline_unique_attack_in_worked_example) ... ok
+test_distinct_l_does_not_bound_confidence_by_one_over_l (test_experiment.ExperimentChecks.test_distinct_l_does_not_bound_confidence_by_one_over_l) ... ok
+test_generated_domain_and_mark_band_consistency (test_experiment.ExperimentChecks.test_generated_domain_and_mark_band_consistency) ... ok
+test_hierarchy_contains_every_true_age_and_postcode (test_experiment.ExperimentChecks.test_hierarchy_contains_every_true_age_and_postcode) ... ok
+test_infeasible_single_band_programme (test_experiment.ExperimentChecks.test_infeasible_single_band_programme) ... ok
+test_k_only_can_leave_complete_sensitive_disclosure (test_experiment.ExperimentChecks.test_k_only_can_leave_complete_sensitive_disclosure) ... ok
+test_l_diversity_can_still_reveal_binary_status (test_experiment.ExperimentChecks.test_l_diversity_can_still_reveal_binary_status) ... ok
+test_l_diversity_in_worked_example_removes_single_band_groups (test_experiment.ExperimentChecks.test_l_diversity_in_worked_example_removes_single_band_groups) ... ok
+test_row_order_does_not_change_attack (test_experiment.ExperimentChecks.test_row_order_does_not_change_attack) ... ok
+test_saved_releases_have_no_identifiers_and_keep_exact_programme (test_experiment.ExperimentChecks.test_saved_releases_have_no_identifiers_and_keep_exact_programme) ... ok
+test_seed_reproducibility_and_changed_seed (test_experiment.ExperimentChecks.test_seed_reproducibility_and_changed_seed) ... ok
+test_selector_is_minimum_loss_within_declared_lattice (test_experiment.ExperimentChecks.test_selector_is_minimum_loss_within_declared_lattice) ... ok
+test_ten_percent_suppression_boundary (test_experiment.ExperimentChecks.test_ten_percent_suppression_boundary) ... ok
+test_unknown_target_is_not_reported_as_success (test_experiment.ExperimentChecks.test_unknown_target_is_not_reported_as_success) ... ok
+test_all_paired_settings_present_without_new_students (test_policy_comparison.PolicyChecks.test_all_paired_settings_present_without_new_students) ... ok
+test_original_inputs_and_outputs_are_byte_identical (test_policy_comparison.PolicyChecks.test_original_inputs_and_outputs_are_byte_identical) ... ok
+test_overall_cap_can_pass_while_programme_cap_fails (test_policy_comparison.PolicyChecks.test_overall_cap_can_pass_while_programme_cap_fails) ... ok
+test_programme_cap_accepts_exactly_ten_percent (test_policy_comparison.PolicyChecks.test_programme_cap_accepts_exactly_ten_percent) ... ok
+test_programme_metrics_use_full_original_denominator (test_policy_comparison.PolicyChecks.test_programme_metrics_use_full_original_denominator) ... ok
+test_saved_release_constraints_and_multisets (test_policy_comparison.PolicyChecks.test_saved_release_constraints_and_multisets) ... ok
+test_single_band_programme_remains_infeasible_for_l_two (test_policy_comparison.PolicyChecks.test_single_band_programme_remains_infeasible_for_l_two) ... ok
+test_zero_suppression_exact_release_does_not_need_extra_generalisation (test_policy_comparison.PolicyChecks.test_zero_suppression_exact_release_does_not_need_extra_generalisation) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 2.722s
+
+OK

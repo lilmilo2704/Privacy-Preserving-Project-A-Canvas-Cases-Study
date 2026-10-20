@@ -1,0 +1,12 @@
+{
+  "source_id": "G2",
+  "origin": "AI-assisted implementation of the student's agreed 10% within-programme suppression comparison",
+  "new_external_data_sources": [],
+  "new_student_records": 0,
+  "original_source_register": "source_register.json",
+  "original_record_provenance": "record_provenance.csv",
+  "new_release_provenance": "policy_comparison/release_provenance.csv",
+  "parameters": "policy_comparison/config.json",
+  "transformation": "Same age/postcode hierarchy, k/l requirements and minimum-generalisation criterion; an additional integer-count programme cap changes candidate feasibility.",
+  "timing": "Exploratory extension chosen after observing the original small-programme suppression finding. Original generator assumptions and all original experimental outputs remain unchanged."
+}

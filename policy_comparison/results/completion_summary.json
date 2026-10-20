@@ -1,0 +1,12 @@
+{
+  "new_releases": 45,
+  "original_defended_comparisons": 45,
+  "original_baselines": 5,
+  "checks_passed": 22,
+  "same_source_records": true,
+  "paired_mae_improvements": 42,
+  "paired_mae_increases": 3,
+  "maximum_programme_suppression_original_pct": 57.49999999999999,
+  "maximum_programme_suppression_new_pct": 9.99999999999999,
+  "original_tracked_files_preserved": 270
+}

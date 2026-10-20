@@ -1,0 +1,3 @@
+age,postcode,programme,size,distinct_bands,max_band_confidence,below50_probability
+18-27,9100,P01,10,2,0.5,0.5
+18-27,9101,P01,10,2,0.5,0.5

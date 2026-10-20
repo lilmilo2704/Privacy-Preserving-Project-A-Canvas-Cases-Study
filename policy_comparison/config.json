@@ -1,0 +1,8 @@
+{
+  "extension_version": "1.0",
+  "policies": ["overall_only", "overall_and_programme"],
+  "max_overall_suppression": 0.10,
+  "max_programme_suppression": 0.10,
+  "comparison": "Reuse every original source dataset and all original defended results. For the extension, use the same k/l settings, 20 candidate hierarchies, attack assumptions and minimum-generalisation selection rule, adding only the programme-specific suppression constraint.",
+  "interpretation": "A coverage constraint, not a new anonymity definition. It guarantees retained coverage per programme under the specified counts, not unbiased estimates or an upper bound on inference confidence."
+}

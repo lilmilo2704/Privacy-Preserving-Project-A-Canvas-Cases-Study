@@ -1,0 +1,65 @@
+{
+  "access_date_local": "2026-10-20",
+  "sources": [
+    {
+      "source_id": "S1",
+      "title": "Grading schema for coursework subjects",
+      "author": "University of Technology Sydney",
+      "url": "https://www.uts.edu.au/for-students/current-students/managing-your-course/attendance-and-study-load/results/grading-schema-coursework-subjects",
+      "location": "Subject grades table",
+      "use": "Numeric boundaries for Below50, Pass, Credit, Distinction and HighDistinction simulation bands only.",
+      "qualification": "The project models numeric mark bands, not every official subject-grade status. Compulsory-component Fail(X), withheld and pending outcomes are outside scope. Does not supply student rows, programme enrolments, mark frequencies or distributions."
+    },
+    {
+      "source_id": "S2",
+      "title": "k-anonymity: a model for protecting privacy",
+      "author": "Latanya Sweeney",
+      "year": 2002,
+      "publication": "International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems, 10(5), 557-570",
+      "url": "https://dataprivacylab.org/dataprivacy/projects/kanonymity/kanonymity.pdf",
+      "location": "PDF pp. 2-3 (linkage); pp. 7-9 (quasi-identifiers and Definition 3)",
+      "use": "Quasi-identifier linkage, k-anonymity definition, generalisation/suppression rationale.",
+      "qualification": "The implementation is a small explicit lattice search, not an implementation or reproduction of Datafly, Incognito or another published optimiser. No external data rows copied."
+    },
+    {
+      "source_id": "S3",
+      "title": "l-Diversity: Privacy Beyond k-Anonymity",
+      "author": "Ashwin Machanavajjhala, Johannes Gehrke, Daniel Kifer and Muthuramakrishnan Venkitasubramaniam",
+      "year": 2006,
+      "publication": "Proceedings of the 22nd International Conference on Data Engineering (ICDE)",
+      "url": "https://www.cs.cornell.edu/johannes/papers/2006/2006-icde-publishing.pdf",
+      "location": "PDF p. 2 (homogeneity/background knowledge); pp. 6-7 (principle and stronger instantiations)",
+      "use": "Motivation for a second sensitive-attribute defence and its limitations.",
+      "qualification": "This project implements distinct-value l-diversity only, not entropy or recursive l-diversity, nor the paper's complete background-knowledge model."
+    },
+    {
+      "source_id": "S4",
+      "title": "t-Closeness: Privacy Beyond k-Anonymity and l-Diversity",
+      "author": "Ninghui Li, Tiancheng Li and Suresh Venkatasubramanian",
+      "year": 2007,
+      "publication": "Proceedings of the 23rd International Conference on Data Engineering (ICDE)",
+      "url": "https://www.cs.purdue.edu/homes/ninghui/papers/t_closeness_icde07.pdf",
+      "location": "Section 2, PDF p. 3 (distinct l-diversity); Section 3 (skewness and similarity)",
+      "use": "Precise distinct-value l-diversity variant and discussion of skewness/semantic limits.",
+      "qualification": "t-closeness is background/future work only and is not implemented or claimed as an experimental defence."
+    },
+    {
+      "source_id": "S5",
+      "title": "Lecture 3 Data anonymity.pptx and Lab 7 - Data anonymity.pdf",
+      "author": "Course teaching materials supplied by the student",
+      "local_original_archive": "privacy preserving.zip",
+      "use": "Course alignment for anonymity, linkage and diversity; supplied course materials are not redistributed in this evidence package.",
+      "qualification": "No actual student records extracted from course examples; consult original supplied materials for bibliographic metadata before final report citation."
+    },
+    {
+      "source_id": "G1",
+      "title": "Project-defined synthetic generator and configuration",
+      "local_paths": ["experiment.py", "config.json", "design_lock.json", "environment.json"],
+      "use": "Sole origin of all 5,000 main synthetic student rows, marks, ages, programme codes, fictitious postcode codes and controlled relationships. The hand-crafted 20-row example also originates in experiment.py.",
+      "qualification": "AI-assisted implementation following the student's recorded scenario and method choices. Requires student review and the course's current disclosure requirements. Cohort counts, probabilities, age mixture, context associations and hierarchies are experimental assumptions, not empirical UTS/Canvas population estimates."
+    }
+  ],
+  "row_provenance_rule": "Every main row maps to G1 by seed and private student_id. File hashes, row counts, config hash and generator hash are recorded in data_provenance.csv. There is no external per-student record source.",
+  "auxiliary_data_rule": "Each private target-query row is copied from the corresponding synthetic source row's identifier and QIs, with marks/result bands excluded. It represents a separate attack on that target, not a jointly available complete identified roster. The attacker sees no private membership or row-index audit.",
+  "release_provenance_rule": "Each releases/ CSV derives from one private source CSV using its configuration row in results/run_metrics.csv and audit/*_search.csv. Identifier and mark columns are removed and row order is shuffled independently. Suppression membership and ground truth remain in investigator-only audit files."
+}

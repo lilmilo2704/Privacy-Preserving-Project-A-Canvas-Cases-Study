@@ -1,0 +1,7 @@
+{
+  "config_sha256": "7d5f90b246cc8a703ac69050a2b22daa114fdd2d257cf5039388cf2dfaa83920",
+  "script_sha256": "e6224ee10d3a8921382d125e074a8f545ed84c4ec875a421a54ff71cdd80a330",
+  "design_version": "1.0",
+  "generation_parameters_changed_after_results": false,
+  "note": "Configuration fixed before this experiment run. Local audit record, not an externally timestamped preregistration."
+}

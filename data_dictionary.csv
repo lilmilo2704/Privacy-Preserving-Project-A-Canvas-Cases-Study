@@ -1,0 +1,8 @@
+field,role,domain_or_rule,source_id,qualification
+student_id,private identifier,S0001...S1000 within each seed,G1,Synthetic evaluation key; absent from releases
+age,quasi-identifier,integer 18-65; nested generalisation intervals,G1,Experimental age mixture; no source population estimate
+postcode,quasi-identifier,40 fictional four-digit tokens and public prefix hierarchy,G1,No actual Australian postcode or geographic claim
+programme,quasi-identifier and analysis grouping,"P01-P06; counts 320,260,180,120,80,40",G1,Fictional programmes; retained exactly
+mark,private sensitive value,"integer 0-100, uniformly sampled within chosen band",G1; S1 boundaries,Never released; verifies the numeric result band
+result_band,released sensitive attribute,Below50 / Pass / Credit / Distinction / HighDistinction,G1 generated values; S1 band boundaries,Numeric mark bands only; special official grade statuses excluded
+target_label,private auxiliary target identity,one identifier per independent simulated attack,G1 derived from synthetic source,"Attacker uses own target QIs only; no result_band, mark or private row mapping"

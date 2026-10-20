@@ -1,0 +1,5 @@
+method,k,ell,age_level,postcode_level,generalisation_loss,suppression,retained,feasible,n_released,n_groups,min_group_size,min_distinct,unique_link_pct,uniform_link_probability,homogeneous_band_pct,modal_band_accuracy_pct,programme_only_accuracy_pct,band_accuracy_gain_pp,high_confidence_band_pct,certain_below50_pct,certain_binary_status_pct,max_band_confidence,all_programmes_retained,programme_below50_mae_pp,programme_below50_max_error_pp,programme_grade_tv_mean,max_programme_suppression
+baseline,1,1,0,0,0.0,0.0,20,True,20,20,1,1,100.0,1.0,100.0,100.0,50.0,50.0,100.0,50.0,100.0,1.0,True,0.0,0.0,0.0,0.0
+k5,5,1,1,0,0.042553191489361694,0.0,20,True,20,4,5,1,0.0,0.2,100.0,100.0,50.0,50.0,100.0,50.0,100.0,1.0,True,0.0,0.0,0.0,0.0
+k5_l2,5,2,2,0,0.09574468085106383,0.0,20,True,20,2,10,2,0.0,0.1,0.0,50.0,50.0,0.0,0.0,0.0,0.0,0.5,True,0.0,0.0,0.0,0.0
+k5_l3,5,3,2,1,0.14702673213311518,0.0,20,True,20,1,20,3,0.0,0.05,0.0,50.0,50.0,0.0,0.0,0.0,0.0,0.5,True,0.0,0.0,0.0,0.0
